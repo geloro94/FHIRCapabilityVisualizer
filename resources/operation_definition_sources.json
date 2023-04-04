@@ -1,0 +1,16 @@
+{
+  "CodeSystem": {
+    "$validate-code": "https://hl7.org/fhir/R4B/operation-codesystem-validate-code.json",
+    "$lookup": "https://hl7.org/fhir/R4B/operation-codesystem-lookup.json",
+    "$subsumes": "https://hl7.org/fhir/R4B/operation-codesystem-subsumes.json",
+    "$find-matches": "https://hl7.org/fhir/R4B/operation-codesystem-find-matches.json"
+  },
+  "ConceptMap": {
+    "$translate": "https://hl7.org/fhir/R4B/operation-conceptmap-translate.json",
+    "$closure": "https://hl7.org/fhir/R4B/operation-conceptmap-closure.json"
+  },
+  "ValueSet": {
+    "$expand": "https://hl7.org/fhir/R4B/operation-valueset-expand.json",
+    "$validate-code": "https://hl7.org/fhir/R4B/operation-valueset-validate-code.json"
+  }
+}
