@@ -33,7 +33,7 @@ cd fhir-endpoint-support-checker
 For example:
 
 ```python
-SERVER_URLS = ["https://hapi.fhir.org/baseR4", "http://localhost:8080/fhir", "https://ontoserver.imi.uni-luebeck.de/fhir"]
+SERVER_URLS = ["https://hapi.fhir.org/baseR4"]
 PATHS_TO_CHECK = ["/ConceptMap/$translate", "/ValueSet/$validate", "/ValueSet/$expand", "/ConceptMap/$closure", "/CodeSystem/$validate-code", "/CodeSystem/$lookup"]
 ```
 
