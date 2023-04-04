@@ -19,7 +19,7 @@ pip install requests openpyxl
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/geloro94/fhir-capability-visualizer.git
+git clone https://github.com/geloro94/FHIRCapabilityVisualizer.git
 ```
 
 2. Navigate to the cloned repository:
