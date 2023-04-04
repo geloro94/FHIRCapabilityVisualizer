@@ -40,7 +40,7 @@ PATHS_TO_CHECK = ["/ConceptMap/$translate", "/ValueSet/$validate", "/ValueSet/$e
 4. Run the script:
 
 ```bash
-python script.py
+python main.py
 ```
 
 The script will generate an Excel file named `endpoint_support.xlsx` in the same directory, containing the results of the supported endpoints for each specified FHIR server.
