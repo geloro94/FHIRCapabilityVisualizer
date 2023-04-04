@@ -6,7 +6,6 @@ from openpyxl.utils import get_column_letter
 
 SERVER_URLS = [
     "https://hapi.fhir.org/baseR4",
-    "https://blaze.imi.uni-luebeck.de/fhir",
     "https://r4.ontoserver.csiro.au/fhir",
     "http://tx.fhir.org/r4",
     "https://tergi.elga.gv.at/fhir-server/api/v4"
