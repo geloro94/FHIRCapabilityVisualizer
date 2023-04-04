@@ -7,6 +7,8 @@ from openpyxl.utils import get_column_letter
 SERVER_URLS = [
     "https://hapi.fhir.org/baseR4",
     "https://r4.ontoserver.csiro.au/fhir",
+    "https://r4.smarthealthit.org",
+    "https://blaze.imi.uni-luebeck.de/fhir",
     "http://tx.fhir.org/r4",
     "https://tergi.elga.gv.at/fhir-server/api/v4"
 ]
@@ -26,7 +28,12 @@ PATHS_TO_CHECK = [
     "/ValueSet/$validate-code",
 
     # Closure
-    "/$closure"
+    "/$closure",
+
+    "/$expand",
+    "/$lookup",
+    "/$validate-code",
+    "/$translate"
 ]
 
 
@@ -68,7 +75,6 @@ def check_endpoint_support(capability_statement, endpoint_paths):
 
             for operation in operation_list:
                 if operation.get("name") == operation_of_interest:
-                    print(operation)
                     supported = True
                     break
 
