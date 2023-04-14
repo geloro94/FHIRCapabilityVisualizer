@@ -1,16 +1,10 @@
 {
-  "CodeSystem": {
-    "$validate-code": "https://hl7.org/fhir/R4B/operation-codesystem-validate-code.json",
-    "$lookup": "https://hl7.org/fhir/R4B/operation-codesystem-lookup.json",
-    "$subsumes": "https://hl7.org/fhir/R4B/operation-codesystem-subsumes.json",
-    "$find-matches": "https://hl7.org/fhir/R4B/operation-codesystem-find-matches.json"
-  },
-  "ConceptMap": {
-    "$translate": "https://hl7.org/fhir/R4B/operation-conceptmap-translate.json",
-    "$closure": "https://hl7.org/fhir/R4B/operation-conceptmap-closure.json"
-  },
-  "ValueSet": {
-    "$expand": "https://hl7.org/fhir/R4B/operation-valueset-expand.json",
-    "$validate-code": "https://hl7.org/fhir/R4B/operation-valueset-validate-code.json"
-  }
+  "/CodeSystem/$validate-code": "https://hl7.org/fhir/R4B/operation-codesystem-validate-code.json",
+  "/CodeSystem/$lookup": "https://hl7.org/fhir/R4B/operation-codesystem-lookup.json",
+  "/CodeSystem/$subsumes": "https://hl7.org/fhir/R4B/operation-codesystem-subsumes.json",
+  "/CodeSystem/$find-matches": "https://hl7.org/fhir/R4B/operation-codesystem-find-matches.json",
+  "/ConceptMap/$translate": "https://hl7.org/fhir/R4B/operation-conceptmap-translate.json",
+  "/ConceptMap/$closure": "https://hl7.org/fhir/R4B/operation-conceptmap-closure.json",
+  "/ValueSet/$expand": "https://hl7.org/fhir/R4B/operation-valueset-expand.json",
+  "/ValueSet/$validate-code": "https://hl7.org/fhir/R4B/operation-valueset-validate-code.json"
 }

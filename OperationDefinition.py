@@ -37,6 +37,15 @@ def get_operation_definition_for_url(url):
     return OperationDefinition(od_json)
 
 
+def initialize_operation_definitions():
+    operation_definitions_json = json.load(open(os.path.join('resources', 'operation_definition_sources.json')))
+    operation_definitions = {}
+    for operation_name, operation_definition_url in operation_definitions_json.items():
+        op_def_json = requests.get(operation_definition_url).json()
+        operation_definitions[operation_name] = OperationDefinition(op_def_json)
+    return operation_definitions
+
+
 if __name__ == "__main__":
     with open(os.path.join('resources', 'operation_definition_sources.json')) as url_file:
         # Load operation definition urls
@@ -44,8 +53,8 @@ if __name__ == "__main__":
 
         # Test with CodeSystem-lookup
         resource = 'CodeSystem'
-        operation = '$lookup'
-        od_url = url_json[resource][operation]
+        operation = 'lookup'
+        od_url = url_json['/'+resource+'/$'+operation]
 
         operation_definition = get_operation_definition_for_url(od_url)
         print(f"Detected parameters for operation {operation} of resource {resource}:")
